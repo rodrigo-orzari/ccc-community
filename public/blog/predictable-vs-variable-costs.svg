@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#003366">
+    Predictable vs. Variable Costs Over Time
+  </text>
+
+  <!-- Y-axis label -->
+  <text x="30" y="350" font-size="13" text-anchor="middle" fill="#333" transform="rotate(-90 30 350)">
+    Monthly Cost ($)
+  </text>
+
+  <!-- Y-axis -->
+  <line x1="80" y1="80" x2="80" y2="600" stroke="#333" stroke-width="2"/>
+
+  <!-- X-axis -->
+  <line x1="80" y1="600" x2="1100" y2="600" stroke="#333" stroke-width="2"/>
+
+  <!-- Y-axis scale and gridlines -->
+  <line x1="75" y1="600" x2="85" y2="600" stroke="#333" stroke-width="1"/>
+  <text x="65" y="605" font-size="12" text-anchor="end" fill="#333">$0</text>
+  <line x1="80" y1="600" x2="1100" y2="600" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <line x1="75" y1="515" x2="85" y2="515" stroke="#333" stroke-width="1"/>
+  <text x="65" y="520" font-size="12" text-anchor="end" fill="#333">$1000</text>
+  <line x1="80" y1="515" x2="1100" y2="515" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <line x1="75" y1="430" x2="85" y2="430" stroke="#333" stroke-width="1"/>
+  <text x="65" y="435" font-size="12" text-anchor="end" fill="#333">$2000</text>
+  <line x1="80" y1="430" x2="1100" y2="430" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <line x1="75" y1="345" x2="85" y2="345" stroke="#333" stroke-width="1"/>
+  <text x="65" y="350" font-size="12" text-anchor="end" fill="#333">$3000</text>
+  <line x1="80" y1="345" x2="1100" y2="345" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <line x1="75" y1="260" x2="85" y2="260" stroke="#333" stroke-width="1"/>
+  <text x="65" y="265" font-size="12" text-anchor="end" fill="#333">$4000</text>
+  <line x1="80" y1="260" x2="1100" y2="260" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <line x1="75" y1="175" x2="85" y2="175" stroke="#333" stroke-width="1"/>
+  <text x="65" y="180" font-size="12" text-anchor="end" fill="#333">$5000</text>
+  <line x1="80" y1="175" x2="1100" y2="175" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <line x1="75" y1="90" x2="85" y2="90" stroke="#333" stroke-width="1"/>
+  <text x="65" y="95" font-size="12" text-anchor="end" fill="#333">$6000</text>
+  <line x1="80" y1="90" x2="1100" y2="90" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <!-- X-axis months -->
+  <text x="130" y="625" font-size="12" text-anchor="middle" fill="#333">Jan</text>
+  <text x="210" y="625" font-size="12" text-anchor="middle" fill="#333">Feb</text>
+  <text x="290" y="625" font-size="12" text-anchor="middle" fill="#333">Mar</text>
+  <text x="370" y="625" font-size="12" text-anchor="middle" fill="#333">Apr</text>
+  <text x="450" y="625" font-size="12" text-anchor="middle" fill="#333">May</text>
+  <text x="530" y="625" font-size="12" text-anchor="middle" fill="#333">Jun</text>
+  <text x="610" y="625" font-size="12" text-anchor="middle" fill="#333">Jul</text>
+  <text x="690" y="625" font-size="12" text-anchor="middle" fill="#333">Aug</text>
+  <text x="770" y="625" font-size="12" text-anchor="middle" fill="#333">Sep</text>
+  <text x="850" y="625" font-size="12" text-anchor="middle" fill="#333">Oct</text>
+  <text x="930" y="625" font-size="12" text-anchor="middle" fill="#333">Nov</text>
+  <text x="1010" y="625" font-size="12" text-anchor="middle" fill="#333">Dec</text>
+
+  <!-- Background area for variable costs -->
+  <path d="M 130 345 L 210 320 L 290 345 L 370 260 L 450 175 L 530 260 L 610 345 L 690 260 L 770 175 L 850 100 L 930 60 L 1010 145 L 1010 600 L 130 600 Z"
+        fill="#cce5ff" opacity="0.3"/>
+
+  <!-- Provisioned (predictable) line -->
+  <line x1="130" y1="345" x2="1010" y2="345" stroke="#0052cc" stroke-width="3"/>
+  <circle cx="130" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="210" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="290" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="370" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="450" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="530" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="610" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="690" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="770" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="850" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="930" cy="345" r="4" fill="#0052cc"/>
+  <circle cx="1010" cy="345" r="4" fill="#0052cc"/>
+
+  <!-- Serverless (variable) line -->
+  <polyline points="130,345 210,320 290,345 370,260 450,175 530,260 610,345 690,260 770,175 850,100 930,60 1010,145"
+            stroke="#0099ff" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <circle cx="130" cy="345" r="4" fill="#0099ff"/>
+  <circle cx="210" cy="320" r="4" fill="#0099ff"/>
+  <circle cx="290" cy="345" r="4" fill="#0099ff"/>
+  <circle cx="370" cy="260" r="4" fill="#0099ff"/>
+  <circle cx="450" cy="175" r="4" fill="#0099ff"/>
+  <circle cx="530" cy="260" r="4" fill="#0099ff"/>
+  <circle cx="610" cy="345" r="4" fill="#0099ff"/>
+  <circle cx="690" cy="260" r="4" fill="#0099ff"/>
+  <circle cx="770" cy="175" r="4" fill="#0099ff"/>
+  <circle cx="850" cy="100" r="4" fill="#0099ff"/>
+  <circle cx="930" cy="60" r="4" fill="#0099ff"/>
+  <circle cx="1010" cy="145" r="4" fill="#0099ff"/>
+
+  <!-- Legend -->
+  <rect x="280" y="660" width="300" height="30" fill="none" stroke="#ddd" stroke-width="1" rx="4"/>
+
+  <line x1="295" y1="675" x2="315" y2="675" stroke="#0052cc" stroke-width="3"/>
+  <text x="325" y="680" font-size="13" fill="#333">Provisioned (predictable)</text>
+
+  <line x1="545" y1="675" x2="565" y2="675" stroke="#0099ff" stroke-width="3"/>
+  <text x="575" y="680" font-size="13" fill="#333">Serverless (variable)</text>
+</svg>

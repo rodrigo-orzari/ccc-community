@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="500" y="40" font-size="32" font-weight="bold" text-anchor="middle" fill="#003366">
+    High Availability Cost Multipliers
+  </text>
+
+  <!-- Y-axis label -->
+  <text x="30" y="300" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90 30 300)">
+    Cost Multiplier
+  </text>
+
+  <!-- Y-axis scale -->
+  <line x1="80" y1="50" x2="80" y2="520" stroke="#ccc" stroke-width="2"/>
+
+  <!-- Y-axis ticks and labels -->
+  <line x1="75" y1="520" x2="85" y2="520" stroke="#333" stroke-width="1"/>
+  <text x="65" y="525" font-size="12" text-anchor="end" fill="#333">0.0</text>
+
+  <line x1="75" y1="430" x2="85" y2="430" stroke="#333" stroke-width="1"/>
+  <text x="65" y="435" font-size="12" text-anchor="end" fill="#333">1.0</text>
+
+  <line x1="75" y1="340" x2="85" y2="340" stroke="#333" stroke-width="1"/>
+  <text x="65" y="345" font-size="12" text-anchor="end" fill="#333">2.0</text>
+
+  <line x1="75" y1="250" x2="85" y2="250" stroke="#333" stroke-width="1"/>
+  <text x="65" y="255" font-size="12" text-anchor="end" fill="#333">3.0</text>
+
+  <!-- X-axis -->
+  <line x1="80" y1="520" x2="950" y2="520" stroke="#333" stroke-width="2"/>
+
+  <!-- AWS RDS bar (1.3x) -->
+  <rect x="150" y="370" width="60" height="150" fill="#0066cc"/>
+  <text x="180" y="545" font-size="14" text-anchor="middle" fill="#333">AWS RDS</text>
+  <text x="180" y="360" font-size="12" text-anchor="middle" fill="#333">1.3x</text>
+
+  <!-- Google Cloud SQL bar (2.0x) -->
+  <rect x="380" y="260" width="60" height="260" fill="#0066cc"/>
+  <text x="410" y="545" font-size="14" text-anchor="middle" fill="#333">Google Cloud SQL</text>
+  <text x="410" y="250" font-size="12" text-anchor="middle" fill="#333">2.0x</text>
+
+  <!-- Oracle MySQL bar (3.0x) -->
+  <rect x="610" y="110" width="60" height="410" fill="#0066cc"/>
+  <text x="640" y="545" font-size="14" text-anchor="middle" fill="#333">Oracle MySQL</text>
+  <text x="640" y="100" font-size="12" text-anchor="middle" fill="#333">3.0x</text>
+
+  <!-- Legend -->
+  <rect x="750" y="100" width="200" height="120" fill="#f9f9f9" stroke="#ddd" stroke-width="1" rx="4"/>
+  <rect x="760" y="115" width="20" height="20" fill="#0066cc"/>
+  <text x="790" y="130" font-size="13" fill="#333">Single-node → HA</text>
+
+  <text x="760" y="165" font-size="11" fill="#666" font-style="italic">
+    HA can 2-3x your database bill
+  </text>
+</svg>

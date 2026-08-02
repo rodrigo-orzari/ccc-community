@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Always-visible horizontal scrollbar, independent of OS "show scrollbars" setting. */
+.always-show-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #a3a3a3 transparent;
+}
+.dark .always-show-scrollbar {
+  scrollbar-color: #525252 transparent;
+}
+.always-show-scrollbar::-webkit-scrollbar {
+  height: 10px;
+  -webkit-appearance: none;
+}
+.always-show-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.always-show-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
+  border-radius: 6px;
+}
+.dark .always-show-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #525252;
+}
+
+/* Slider styled to match the FilterSidebar range slider (hollow circle thumb). */
+input[type="range"].workload-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+input[type="range"].workload-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #d4d4d4;
+}
+.dark input[type="range"].workload-slider::-webkit-slider-thumb {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #404040;
+}
+input[type="range"].workload-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #d4d4d4;
+}
+.dark input[type="range"].workload-slider::-moz-range-thumb {
+  border: 1px solid #404040;
+}
+input[type="range"].workload-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: transparent;
+}
+input[type="range"].workload-slider::-moz-range-track {
+  height: 4px;
+  background: transparent;
+}

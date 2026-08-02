@@ -1,0 +1,62 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#003366">
+    8 vCPU / ~32 GB Database Pricing
+  </text>
+
+  <!-- Table Header -->
+  <rect x="80" y="70" width="1040" height="60" fill="#003366"/>
+  <text x="200" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Provider</text>
+  <text x="420" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Hourly</text>
+  <text x="620" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Monthly</text>
+  <text x="820" y="105" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Annual</text>
+
+  <!-- Dividers in header -->
+  <line x1="320" y1="70" x2="320" y2="130" stroke="white" stroke-width="1"/>
+  <line x1="520" y1="70" x2="520" y2="130" stroke="white" stroke-width="1"/>
+  <line x1="720" y1="70" x2="720" y2="130" stroke="white" stroke-width="1"/>
+
+  <!-- Row 1: Google Cloud SQL -->
+  <rect x="80" y="130" width="1040" height="80" fill="#f5f5f5"/>
+  <text x="200" y="165" font-size="13" text-anchor="middle" fill="#333">Google Cloud SQL</text>
+  <text x="420" y="165" font-size="13" text-anchor="middle" fill="#333">$0.39</text>
+  <text x="620" y="165" font-size="13" text-anchor="middle" fill="#333">$2,808</text>
+  <text x="820" y="165" font-size="13" text-anchor="middle" fill="#333">$33,696</text>
+
+  <line x1="320" y1="130" x2="320" y2="210" stroke="#ddd" stroke-width="1"/>
+  <line x1="520" y1="130" x2="520" y2="210" stroke="#ddd" stroke-width="1"/>
+  <line x1="720" y1="130" x2="720" y2="210" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Row 2: AWS RDS -->
+  <rect x="80" y="210" width="1040" height="80" fill="white"/>
+  <text x="200" y="245" font-size="13" text-anchor="middle" fill="#333">AWS RDS</text>
+  <text x="420" y="245" font-size="13" text-anchor="middle" fill="#333">$0.43</text>
+  <text x="620" y="245" font-size="13" text-anchor="middle" fill="#333">$3,096</text>
+  <text x="820" y="245" font-size="13" text-anchor="middle" fill="#333">$37,152</text>
+
+  <line x1="320" y1="210" x2="320" y2="290" stroke="#ddd" stroke-width="1"/>
+  <line x1="520" y1="210" x2="520" y2="290" stroke="#ddd" stroke-width="1"/>
+  <line x1="720" y1="210" x2="720" y2="290" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Row 3: DigitalOcean -->
+  <rect x="80" y="290" width="1040" height="80" fill="#fef5f0"/>
+  <text x="200" y="325" font-size="13" text-anchor="middle" fill="#333">DigitalOcean</text>
+  <text x="420" y="325" font-size="13" text-anchor="middle" fill="#333">$0.72</text>
+  <text x="620" y="325" font-size="13" text-anchor="middle" fill="#333">$5,184</text>
+  <text x="820" y="325" font-size="13" text-anchor="middle" fill="#333">$62,208</text>
+
+  <line x1="320" y1="290" x2="320" y2="370" stroke="#ddd" stroke-width="1"/>
+  <line x1="520" y1="290" x2="520" y2="370" stroke="#ddd" stroke-width="1"/>
+  <line x1="720" y1="290" x2="720" y2="370" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Outer table border -->
+  <rect x="80" y="70" width="1040" height="300" fill="none" stroke="#333" stroke-width="2"/>
+
+  <!-- Insight -->
+  <text x="600" y="430" font-size="13" text-anchor="middle" fill="#666" font-style="italic">
+    DigitalOcean costs 84% more annually than GCP for equivalent specs.
+  </text>
+</svg>

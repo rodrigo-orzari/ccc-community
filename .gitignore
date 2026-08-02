@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+.next/
+.turbo/
+out/
+
+# TypeScript incremental build cache — regenerated on every build
+tsconfig.tsbuildinfo
