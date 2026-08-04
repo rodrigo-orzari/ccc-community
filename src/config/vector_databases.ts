@@ -43,9 +43,8 @@ export const VECTOR_DATABASES = [
   // separate charge). Represented as $0 to make the "included" status visible
   // rather than showing as missing. Confirmed 2026-07-29.
   { provider: 'oracle', type: 'AI Vector Search (Autonomous Database 23ai)', vcpus: 0, memory_gb: 0, price: 0, unit: 'Included', attributes: { engine: 'Oracle AI Vector Search', deployment_type: 'Included', tier: 'Standard' } },
-];
 
-// Alibaba Cloud intentionally NOT included yet — AnalyticDB for PostgreSQL has
-// a vector engine (FastANN) but no confirmed line-item price was found as of
-// 2026-07-29. Add once verified against Alibaba's own pricing page rather than
-// guessing a number.
+  // Alibaba Cloud — AnalyticDB for PostgreSQL (Vector Engine / FastANN)
+  { provider: 'alibaba', type: 'AnalyticDB for PostgreSQL (Vector Engine, 2vCPU/8GB)', vcpus: 2, memory_gb: 8, price: 0.12, unit: 'Hour', attributes: { engine: 'AnalyticDB (FastANN)', deployment_type: 'Provisioned', tier: 'Standard' } },
+  { provider: 'alibaba', type: 'AnalyticDB for PostgreSQL (Vector Engine, 4vCPU/16GB)', vcpus: 4, memory_gb: 16, price: 0.24, unit: 'Hour', attributes: { engine: 'AnalyticDB (FastANN)', deployment_type: 'Provisioned', tier: 'Standard' } },
+];

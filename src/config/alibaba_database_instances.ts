@@ -21,4 +21,8 @@ export const ALIBABA_DB_INSTANCES = [
   // product Alibaba genuinely offers.
   { type: 'dds.mongo.mid (2c4g replica)', engine: 'MongoDB', vcpus: 2, memory: 4, price: 0.15 },
   { type: 'dds.mongo.standard (4c8g replica)', engine: 'MongoDB', vcpus: 4, memory: 8, price: 0.30 },
+
+  // ApsaraDB for Redis / Tair (Standard Edition) — Managed In-Memory Cache.
+  { type: 'redis.master.small.2c', engine: 'Redis', vcpus: 2, memory: 4, price: 0.08 },
+  { type: 'redis.master.standard.4c', engine: 'Redis', vcpus: 4, memory: 8, price: 0.16 },
 ];
