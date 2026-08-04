@@ -814,7 +814,7 @@ export default function FilterSidebar({
                 const mappedFamily = Object.keys(staticConfig.DB_FAMILY_MAPPINGS || {}).find(
                   k => k.toLowerCase() === f.toLowerCase()
                 );
-                return mappedFamily ? staticConfig.DB_FAMILY_MAPPINGS[mappedFamily] : [];
+                return mappedFamily ? staticConfig.DB_FAMILY_MAPPINGS[mappedFamily] : staticConfig.DB_ENGINES;
               })
             : staticConfig.DB_ENGINES;
             

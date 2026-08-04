@@ -51,8 +51,6 @@ export default function Dashboard() {
       [selectedOS, setSelectedOS, staticConfig.OS_TYPES.length, () => [...config.OS_TYPES]],
       [selectedCpu, setSelectedCpu, staticConfig.CPU_PROFILES.length, () => [...config.CPU_PROFILES.map(p => p.id)]],
       [selectedCategory, setSelectedCategory, staticConfig.CATEGORIES.length, () => [...config.CATEGORIES]],
-      [selectedGpuModels, setSelectedGpuModels, staticConfig.GPU_MODELS.length, () => [...config.GPU_MODELS]],
-      [selectedGpuVendors, setSelectedGpuVendors, staticConfig.GPU_VENDORS.length, () => [...config.GPU_VENDORS]],
       [selectedDbFamilies, setSelectedDbFamilies, staticConfig.DB_FAMILIES.length, () => [...config.DB_FAMILIES]],
       [selectedEngines, setSelectedEngines, staticConfig.DB_ENGINES.length, () => [...config.DB_ENGINES]],
       [selectedDeploymentTypes, setSelectedDeploymentTypes, staticConfig.DEPLOYMENT_TYPES.length, () => [...config.DEPLOYMENT_TYPES]],

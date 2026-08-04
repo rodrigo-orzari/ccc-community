@@ -112,7 +112,7 @@ export function useDynamicFilters() {
     DEFAULT_PRICE_RANGE: config.DEFAULT_PRICE_RANGE,
     DEFAULT_GPU_COUNT_RANGE: config.DEFAULT_GPU_COUNT_RANGE,
     PROVIDERS: config.PROVIDERS,
-    DB_FAMILIES: merge(config.DB_FAMILIES, dynamicData?.db_families),
+    DB_FAMILIES: merge(config.DB_FAMILIES, (dynamicData?.db_families || []).filter((f: string) => !['database', 'databases'].includes(f.toLowerCase()))),
     STORAGE_CATEGORIES: merge(config.STORAGE_CATEGORIES, dynamicData?.storage_categories),
     STORAGE_REDUNDANCIES: merge(config.STORAGE_REDUNDANCIES, dynamicData?.storage_redundancies),
     STORAGE_MEDIA: merge(config.STORAGE_MEDIA, dynamicData?.storage_media),

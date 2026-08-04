@@ -375,6 +375,8 @@ export function buildPricingFilters(query: any) {
           const familyConditions: string[] = [];
 
           for (const family of dbFamilyFilters) {
+            if (['database', 'databases'].includes(family.toLowerCase())) continue;
+
             // Find engines for this family (case-insensitive match)
             const mappedFamily = Object.keys(DB_FAMILY_MAPPINGS).find(
               k => k.toLowerCase() === family.toLowerCase()
@@ -383,6 +385,10 @@ export function buildPricingFilters(query: any) {
             if (mappedFamily && DB_FAMILY_MAPPINGS[mappedFamily].length > 0) {
               familyConditions.push(`LOWER(pr.attributes->>'engine') = ANY($${paramCount})`);
               values.push(DB_FAMILY_MAPPINGS[mappedFamily].map(e => e.toLowerCase()));
+              paramCount++;
+            } else {
+              familyConditions.push(`LOWER(pr.category) = $${paramCount}`);
+              values.push(family.toLowerCase());
               paramCount++;
             }
           }
