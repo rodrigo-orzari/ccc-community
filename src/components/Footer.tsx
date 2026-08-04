@@ -3,6 +3,10 @@
 import React from 'react';
 import Link from 'next/link';
 
+// Community-edition override — no sponsorship/premium concepts apply to a
+// self-hosted instance, and Blog/Docs/Sign-in aren't included in this
+// edition's routes. See scripts/export-community.mjs for how this file gets
+// applied over the copy from ccc's own Footer.tsx.
 export default function Footer() {
   return (
     <footer className="border-t border-[#e5e5e5] dark:border-[#262626] bg-[#fcfcfc] dark:bg-[#050505] py-3 px-4 shrink-0 z-20 transition-colors duration-300">
@@ -11,39 +15,19 @@ export default function Footer() {
           <Link href="/about" className="hover:text-black dark:hover:text-white transition-colors">
             About
           </Link>
-          <Link href="/blog" className="hover:text-black dark:hover:text-white transition-colors">
-            Blog
-          </Link>
           <a
-            href="mailto:hello@comparecloudcosts.com"
-            className="hover:text-black dark:hover:text-white transition-colors"
-          >
-            Contact
-          </a>
-          <Link href="/docs" className="hover:text-black dark:hover:text-white transition-colors">
-            Documentation
-          </Link>
-          <a
-            href="https://github.com/rodrigo-orzari/ccc"
+            href="https://github.com/rodrigo-orzari/ccc-community"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black dark:hover:text-white transition-colors"
           >
             GitHub
           </a>
-          <a
-            href="https://connect.intuit.com/pay/comparecloudcosts/scs-v1-824a8961cf5a42edb4a9669eadc326d633c0e43cb25c449994ebf699ef3f754543e8bdeece91480e82e233bb2fd5f5c5-0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black dark:hover:text-white transition-colors"
-          >
-            Help keep it free
-          </a>
+          <Link href="/methodology" className="hover:text-black dark:hover:text-white transition-colors">
+            Methodology
+          </Link>
           <Link href="/privacy" className="hover:text-black dark:hover:text-white transition-colors">
             Privacy
-          </Link>
-          <Link href="/sponsors" className="hover:text-black dark:hover:text-white transition-colors">
-            Sponsors
           </Link>
           <Link href="/status" className="hover:text-black dark:hover:text-white transition-colors">
             Status
@@ -53,7 +37,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="text-[9px] text-[#a3a3a3] dark:text-[#737373]">
-          &copy; {new Date().getFullYear()} Co-Sell Plus LLC. Compare Cloud Costs is a Co-Sell Plus LLC product.
+          Compare Cloud Costs — Community Edition. Licensed under AGPL-3.0.
         </div>
       </div>
     </footer>
