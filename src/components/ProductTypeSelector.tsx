@@ -101,21 +101,6 @@ export default function ProductTypeSelector({
         })}
 
         <Link
-          href="/workloads"
-          className={`flex items-center gap-2 px-3 py-1 rounded border transition-all ${
-            activeProductType === 'workloads' as any
-              ? 'bg-[#f7f8ff] dark:bg-[#1e1e38] shadow-sm border-[#dde0f0] dark:border-[#1e1e38] cursor-default'
-              : 'border-transparent text-[#737373] hover:text-black dark:hover:text-[#f7f8ff] opacity-60 hover:opacity-100'
-          }`}
-          style={{ textDecoration: 'none' }}
-        >
-          <span className={`text-xs font-bold flex flex-col items-center gap-0.5 ${activeProductType !== 'workloads' as any ? 'font-medium' : ''}`}>
-            <span>📦</span>
-            <span className="text-[10px] leading-tight">Workloads</span>
-          </span>
-        </Link>
-
-        <Link
           href="/compliance"
           className={`flex items-center gap-2 px-3 py-1 rounded border transition-all ${
             activeProductType === 'compliance' as any
@@ -142,6 +127,21 @@ export default function ProductTypeSelector({
           <span className={`text-xs font-bold flex flex-col items-center gap-0.5 ${activeProductType !== 'datacenters' as any ? 'font-medium' : ''}`}>
             <span>🏢</span>
             <span className="text-[10px] leading-tight">Datacenters</span>
+          </span>
+        </Link>
+
+        <Link
+          href="/workloads"
+          className={`flex items-center gap-2 px-3 py-1 rounded border transition-all ${
+            activeProductType === 'workloads' as any
+              ? 'bg-[#f7f8ff] dark:bg-[#1e1e38] shadow-sm border-[#dde0f0] dark:border-[#1e1e38] cursor-default'
+              : 'border-transparent text-[#737373] hover:text-black dark:hover:text-[#f7f8ff] opacity-60 hover:opacity-100'
+          }`}
+          style={{ textDecoration: 'none' }}
+        >
+          <span className={`text-xs font-bold flex flex-col items-center gap-0.5 ${activeProductType !== 'workloads' as any ? 'font-medium' : ''}`}>
+            <span>📦</span>
+            <span className="text-[10px] leading-tight">Workloads</span>
           </span>
         </Link>
       </div>

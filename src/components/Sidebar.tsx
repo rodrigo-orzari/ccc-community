@@ -31,7 +31,7 @@ import type { ProductType } from '@/types';
 
 const STORAGE_KEY = 'ccc-sidebar-collapsed';
 
-const PRODUCT_TYPES: { id: ProductType | 'workloads'; label: string; icon: React.ComponentType<{ size?: number }>; soon?: boolean; href?: string }[] = [
+const PRODUCT_TYPES: { id: ProductType; label: string; icon: React.ComponentType<{ size?: number }>; soon?: boolean; href?: string }[] = [
   { id: 'ai', label: 'Artificial Intelligence', icon: Brain },
   { id: 'app-hosting', label: 'App Hosting', icon: Rocket },
   { id: 'containers', label: 'Containers', icon: Package },
@@ -44,12 +44,12 @@ const PRODUCT_TYPES: { id: ProductType | 'workloads'; label: string; icon: React
   { id: 'serverless', label: 'Serverless', icon: Zap },
   { id: 'storage', label: 'Storage', icon: HardDrive },
   { id: 'vm', label: 'Virtual Machines', icon: Server },
-  { id: 'workloads', label: 'Workloads', icon: Package, href: '/workloads' },
 ];
 
 const EXTRA_LINKS: { id: string; label: string; href: string; icon: React.ComponentType<{ size?: number }> }[] = [
   { id: 'compliance', label: 'Compliance', href: '/compliance', icon: ScrollText },
   { id: 'datacenters', label: 'Datacenters', href: '/datacenters', icon: Building2 },
+  { id: 'workloads', label: 'Workloads', href: '/workloads', icon: Package },
 ];
 
 // Shared icon set so every page that used to show the old emoji per category/link
@@ -91,9 +91,9 @@ export const PRODUCT_TYPE_LABELS: Record<ProductType, string> = {
 };
 
 export const EXTRA_LINK_ICONS: Record<string, IconComponent> = {
-  workloads: Package,
   compliance: ScrollText,
   datacenters: Building2,
+  workloads: Package,
 };
 
 interface SidebarProps {
