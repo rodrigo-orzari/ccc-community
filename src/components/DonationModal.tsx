@@ -47,7 +47,7 @@ export function DonationModal({ showOn = 'workloads' }: DonationModalProps) {
 
         <div className="mb-4">
           <h2 className="text-[15px] font-bold text-[#1a1a2e] dark:text-[#f7f8ff] leading-tight">
-            Buy me a coffee ☕
+            Help keep it free ☕
           </h2>
           <p className="text-[10px] text-[#737373] mt-0.5">Support the project · completely voluntary</p>
         </div>
@@ -76,7 +76,7 @@ export function DonationModal({ showOn = 'workloads' }: DonationModalProps) {
             onClick={handleDonate}
             className="w-full py-2.5 px-4 bg-black dark:bg-white text-white dark:text-black font-semibold rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors"
           >
-            Buy me a coffee ☕
+            Help keep it free ☕
           </button>
 
           <button
