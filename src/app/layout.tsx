@@ -17,7 +17,24 @@ export const metadata: Metadata = {
     template: '%s | Compare Cloud Costs',
   },
   description: 'Compare pricing across AWS, Azure, Google Cloud, Oracle, DigitalOcean, Alibaba Cloud, and Cloudflare. AI models, vector databases, compute, storage, and networking—all normalized side-by-side.',
-  keywords: ['Cloud Computing', 'AWS Pricing', 'Azure Pricing', 'Google Cloud Pricing', 'Oracle Cloud', 'DigitalOcean', 'Cloud Cost Comparison', 'FinOps', 'Cloud Databases', 'Serverless Pricing', 'Multi-Cloud', 'Cloud TCO'],
+  keywords: [
+    'Cloud Computing',
+    'AWS Pricing',
+    'Azure Pricing',
+    'Google Cloud Pricing',
+    'AWS vs Azure vs GCP',
+    'Cloud Pricing Calculator',
+    'Oracle Cloud Pricing',
+    'DigitalOcean Pricing',
+    'Alibaba Cloud Pricing',
+    'Cloud Cost Comparison',
+    'FinOps',
+    'Cloud Databases',
+    'Serverless Pricing',
+    'Multi-Cloud TCO',
+    'AI Model Pricing',
+    'Vector Database Pricing',
+  ],
   alternates: {
     canonical: '/',
   },
@@ -27,11 +44,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://comparecloudcosts.com',
-    // 12 = the product categories in Sidebar.tsx PRODUCT_TYPES, excluding
-    // 'workloads' (a separate page, not a category). Deliberately NOT the "17
-    // categories" figure in MEMORY — that's the database-level taxonomy. A
-    // public claim has to be something a visitor can verify by counting the nav.
-    title: 'Compare Cloud Costs - 12 Categories Across 14 Cloud Providers',
+    title: 'Compare Cloud Costs - AWS, Azure, GCP & 11 More Providers',
     description: 'Side-by-side cloud pricing comparison: AWS vs Azure vs GCP vs Oracle vs DigitalOcean vs Alibaba. Compute, databases, serverless, storage, networking, AI, and more.',
     siteName: 'Compare Cloud Costs',
     images: [
@@ -88,6 +101,21 @@ export default function RootLayout({
         publisher: { '@id': 'https://comparecloudcosts.com/#organization' },
         description:
           'Instantly compare compute, database, and serverless pricing across major cloud providers.',
+      },
+      {
+        '@type': 'SoftwareApplication',
+        '@id': 'https://comparecloudcosts.com/#application',
+        name: 'Compare Cloud Costs Calculator',
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'All',
+        url: 'https://comparecloudcosts.com',
+        description:
+          'Multi-cloud cost comparison engine and pricing calculator for AWS, Azure, Google Cloud, Oracle, DigitalOcean, Alibaba Cloud, and Cloudflare.',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
       },
     ],
   };
