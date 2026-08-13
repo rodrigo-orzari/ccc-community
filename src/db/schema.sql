@@ -115,6 +115,7 @@ CREATE INDEX IF NOT EXISTS idx_pricing_attr_engine_lower ON pricing_records (LOW
 -- only ever resolves for the one provider that owns it, and every other
 -- provider returns a NULL price that renders as $0.00.
 ALTER TABLE regions ADD COLUMN IF NOT EXISTS geo_group VARCHAR(50);
+ALTER TABLE regions ADD COLUMN IF NOT EXISTS is_anchor BOOLEAN DEFAULT FALSE;
 
 CREATE INDEX IF NOT EXISTS idx_regions_geo_group ON regions (geo_group);
 
