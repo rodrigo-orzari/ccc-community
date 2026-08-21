@@ -112,7 +112,7 @@ npm run start
 | **Provider Pricing Pipelines & Scrapers** | ✅ | ✅ |
 | **12 Core Categories & Filtering** | ✅ | ✅ |
 | **Self-Hostable PostgreSQL Backend** | ✅ | ✅ |
-| **Bring Your Estimate / Bill / Architecture Parsers** | ❌ | ✅ |
+| **Bring Your Cloud (Estimate / Bill / Architecture / CLI Inventory)** | ❌ | ✅ |
 | **Datacenters & Compliance Mapping** | ❌ | ✅ |
 | **Workload Blueprint Generator** | ❌ | ✅ |
 
