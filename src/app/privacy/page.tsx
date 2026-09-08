@@ -157,7 +157,7 @@ const PrivacyPolicyPage: React.FC = () => {
           {/* Main content */}
           <main className="privacy-main">
             <h1>Privacy Policy</h1>
-            <p className="privacy-meta">Last updated: July 22, 2026.</p>
+            <p className="privacy-meta">Last updated: September 7, 2026.</p>
 
             <CopyHeading id="overview">Overview</CopyHeading>
             <p>
@@ -181,6 +181,9 @@ const PrivacyPolicyPage: React.FC = () => {
             <p>
               Uploaded estimate and invoice files are held in server memory only for the duration of the request that processes them. They are never written to disk, never committed to a database, and are discarded when the response is returned. The comparison results you see are generated in that same request; we do not store the results either. Closing or refreshing the page discards them.
             </p>
+            <p>
+              <strong>Uploaded Documents &amp; Catalog Coverage Improvement:</strong> Uploaded estimate and invoice files remain strictly ephemeral and are discarded immediately after response generation. When our matching algorithms identify a cloud SKU or instance specification that is not yet indexed in our pricing catalog, our system records an <strong>anonymized catalog gap signal</strong> (such as the provider name, product category, instance type, detected specs, and region). This signal contains <strong>zero personal, company, account, credential, or financial dollar amount data</strong>, and is used exclusively to expand our catalog coverage.
+            </p>
 
             <CopyHeading id="information-we-collect">Information We Collect</CopyHeading>
             <h3>Usage Data</h3>
@@ -196,6 +199,19 @@ const PrivacyPolicyPage: React.FC = () => {
             <p>
               Basic browsing of our public pricing tables does not require creating an account or submitting personal information. Any information you voluntarily provide (such as through contact forms, feedback emails, or document uploads) is handled according to our strict data minimization standards.
             </p>
+            <h3>Anonymized Catalog Gap &amp; Unmatched SKU Telemetry</h3>
+            <p>
+              When you search for cloud services or cross-reference estimates, bills, and architecture blueprints through our platform, our matching algorithms evaluate each component against our pricing database. If an item or instance specification cannot be matched because it is not yet indexed in our catalog, we may collect non-identifiable technical attributes of the missing item:
+            </p>
+            <ul>
+              <li>Cloud provider name and service category (e.g., virtual machines, databases, object storage)</li>
+              <li>Instance family, model, or SKU identifier (e.g., newly launched provider instance types)</li>
+              <li>Detected technical specifications (vCPU count, memory, storage tier, operating system, and region)</li>
+              <li>Match failure categorization (e.g., whether the provider lacks the category entirely or our ingestion pipeline is missing that specific SKU)</li>
+            </ul>
+            <p>
+              This telemetry is strictly technical and anonymous. It does <strong>not</strong> include any personal details, organizational identity, billing volumes, monetary amounts, or uploaded source documents.
+            </p>
 
             <CopyHeading id="authentication-security">Authentication &amp; User Account Security</CopyHeading>
             <p>
@@ -208,11 +224,18 @@ const PrivacyPolicyPage: React.FC = () => {
             <CopyHeading id="how-we-use-your-information">How We Use Your Information</CopyHeading>
             <p>We use collected information to:</p>
             <ul>
-              <li>Improve and optimize our pricing data and user experience</li>
-              <li>Understand how users interact with our platform</li>
+              <li>Improve and optimize our pricing data, ingestion pipelines, and user experience</li>
+              <li>Understand how users interact with our platform and navigate cloud categories</li>
+              <li>Identify and prioritize missing SKUs to add to our catalog roadmap</li>
               <li>Debug and troubleshoot technical issues</li>
-              <li>Generate aggregated analytics (never identifying individuals)</li>
+              <li>Generate aggregated analytics and industry benchmarks (never identifying individuals)</li>
             </ul>
+            <p>
+              <strong>Aggregated Cloud Trends &amp; Benchmarking Features:</strong> Compare Cloud Costs may use anonymized and aggregated SKU demand and catalog gap data in public, non-identifiable statistics, research, and cloud cost benchmarks. Your search and matching inputs are combined with those of others to reveal broader industry patterns—such as the most frequently requested uncatalogued cloud services, regional price variances, and multi-cloud architectural adoption patterns.
+            </p>
+            <p>
+              Enabling this continuous feedback loop directly steers our data ingestion roadmap, ensuring our automated pipelines prioritize adding the specific missing SKUs our community needs most. In addition, this aggregated signal powers current and future features that allow you to compare your workload configurations, evaluate alternative architecture options, and benchmark cloud cost efficiency against industry norms in a safe, privacy-protected format.
+            </p>
 
             <CopyHeading id="data-sharing-and-disclosure">Data Sharing and Disclosure</CopyHeading>
             <p>
