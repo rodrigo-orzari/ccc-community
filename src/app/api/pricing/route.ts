@@ -21,6 +21,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(records);
   } catch (err: any) {
     console.error('API Error:', err);
-    return NextResponse.json({ error: 'Failed to fetch pricing data', details: err.message }, { status: 500 });
+    const details = process.env.NODE_ENV === 'production' ? 'An internal server error occurred.' : err.message;
+    return NextResponse.json({ error: 'Failed to fetch pricing data', details }, { status: 500 });
   }
 }

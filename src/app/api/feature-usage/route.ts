@@ -29,7 +29,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ feature, counts });
   } catch (err: any) {
     console.error('Feature usage GET error:', err);
-    return NextResponse.json({ error: 'Failed to fetch usage counts', details: err.message }, { status: 500 });
+    const details = process.env.NODE_ENV === 'production' ? 'An internal error occurred.' : err.message;
+    return NextResponse.json({ error: 'Failed to fetch usage counts', details }, { status: 500 });
   }
 }
 
@@ -61,6 +62,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ feature, provider, count: Number(row.count) });
   } catch (err: any) {
     console.error('Feature usage POST error:', err);
-    return NextResponse.json({ error: 'Failed to record usage', details: err.message }, { status: 500 });
+    const details = process.env.NODE_ENV === 'production' ? 'An internal error occurred.' : err.message;
+    return NextResponse.json({ error: 'Failed to record usage', details }, { status: 500 });
   }
 }

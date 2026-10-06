@@ -16,6 +16,13 @@ export async function GET(req: NextRequest) {
       last_updated: snapshot.last_updated,
     });
   } catch (err: any) {
-    return NextResponse.json({ status: 'error', message: err.message }, { status: 500 });
+    console.error('Health check error:', err);
+    return NextResponse.json(
+      {
+        status: 'error',
+        message: process.env.NODE_ENV === 'production' ? 'Database connection failure' : err.message,
+      },
+      { status: 500 }
+    );
   }
 }

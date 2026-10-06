@@ -19,6 +19,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(result);
   } catch (err: any) {
     console.error('Counts API error:', err);
-    return NextResponse.json({ error: 'Failed to fetch counts', details: err.message }, { status: 500 });
+    const details = process.env.NODE_ENV === 'production' ? 'An internal server error occurred.' : err.message;
+    return NextResponse.json({ error: 'Failed to fetch counts', details }, { status: 500 });
   }
 }

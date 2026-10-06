@@ -22,6 +22,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(result);
   } catch (err: any) {
     console.error('Facets API error:', err);
-    return NextResponse.json({ error: 'Failed to fetch facet counts', details: err.message }, { status: 500 });
+    const details = process.env.NODE_ENV === 'production' ? 'An internal error occurred.' : err.message;
+    return NextResponse.json({ error: 'Failed to fetch facet counts', details }, { status: 500 });
   }
 }
