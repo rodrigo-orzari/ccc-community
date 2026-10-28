@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/ccc-mark.png" alt="Compare Cloud Costs logo" width="160">
+</p>
+
 # Compare Cloud Costs — Community Edition
 
 An open-source, self-hostable cloud pricing comparison application. Compares pricing across **AWS, Azure, GCP, Oracle Cloud, DigitalOcean, and Alibaba Cloud** across 12 core product categories — compute VMs, databases, serverless, containers, networking, storage, data analytics, AI models, and app hosting.
