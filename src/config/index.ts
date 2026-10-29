@@ -167,21 +167,21 @@ export const DEFAULT_GPU_COUNT_RANGE = { min: 0, max: 16 };
 export type ProviderType = 'hyperscaler' | 'specialized';
 
 export const PROVIDERS: { id: string; name: string; color: string; soon?: boolean; providerType: ProviderType }[] = [
+  { id: 'alibaba', name: 'Alibaba', color: '#FF6A00', providerType: 'hyperscaler' },
   { id: 'aws', name: 'AWS', color: '#FF9900', providerType: 'hyperscaler' },
   { id: 'azure', name: 'Azure', color: '#00BCFF', providerType: 'hyperscaler' },
+  { id: 'digitalocean', name: 'DigitalOcean', color: '#0069FF', providerType: 'hyperscaler' },
   { id: 'gcp', name: 'Google', color: '#34A853', providerType: 'hyperscaler' },
   { id: 'oracle', name: 'Oracle', color: '#F80000', providerType: 'hyperscaler' },
-  { id: 'digitalocean', name: 'DigitalOcean', color: '#0069FF', providerType: 'hyperscaler' },
-  { id: 'alibaba', name: 'Alibaba', color: '#FF6A00', providerType: 'hyperscaler' },
-  { id: 'openai', name: 'OpenAI', color: '#10A37F', providerType: 'specialized' },
   { id: 'anthropic', name: 'Anthropic', color: '#CC9D87', providerType: 'specialized' },
-  { id: 'radium', name: 'Radium', color: '#7C3AED', providerType: 'specialized' },
-  { id: 'pinecone', name: 'Pinecone', color: '#3B1CFF', providerType: 'specialized' },
-  { id: 'milvus', name: 'Milvus', color: '#00D2D3', providerType: 'specialized' },
-  { id: 'qdrant', name: 'Qdrant', color: '#FF004E', providerType: 'specialized' },
-  { id: 'weaviate', name: 'Weaviate', color: '#2DCA73', providerType: 'specialized' },
   { id: 'chroma', name: 'Chroma', color: '#FF4F00', providerType: 'specialized' },
   { id: 'cloudflare', name: 'Cloudflare', color: '#F38020', providerType: 'specialized' },
+  { id: 'milvus', name: 'Milvus', color: '#00D2D3', providerType: 'specialized' },
+  { id: 'openai', name: 'OpenAI', color: '#10A37F', providerType: 'specialized' },
+  { id: 'pinecone', name: 'Pinecone', color: '#3B1CFF', providerType: 'specialized' },
+  { id: 'qdrant', name: 'Qdrant', color: '#FF004E', providerType: 'specialized' },
+  { id: 'radium', name: 'Radium', color: '#7C3AED', providerType: 'specialized' },
+  { id: 'weaviate', name: 'Weaviate', color: '#2DCA73', providerType: 'specialized' },
 ];
 
 // Providers that only belong to specific product categories. The six hyperscalers
